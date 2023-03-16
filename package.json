@@ -1,0 +1,17 @@
+{
+  "name": "learning-objective-generator",
+  "version": "1.0.0",
+  "description": "The learning objective generator by kitMaestro",
+  "main": "index.js",
+  "repository": "git@github.com:kitmaestro/learning-objective-generator.git",
+  "author": "Otoniel Reyes <kenliten@otonielreyes.com>",
+  "license": "GPL-3.0-or-later",
+  "private": true,
+  "scripts": {
+    "text": "mocha"
+  },
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "mocha": "^10.2.0"
+  }
+}
