@@ -55,7 +55,7 @@ main
                 }
                 else
                 {
-                    // user didn't provided more info
+                    exit(1);
                 }
             }
             if (argv[i][1] == 'g') {
@@ -71,7 +71,7 @@ main
                 }
                 else
                 {
-                    // user didn't provided more info
+                    exit(1);
                 }
             }
             if (argv[i][1] == 's') {
@@ -84,7 +84,7 @@ main
                 }
                 else
                 {
-                    // user didn't provided more info
+                    exit(1);
                 }
             }
             if (argv[i][1] == 'd') {
@@ -100,7 +100,7 @@ main
                 }
                 else
                 {
-                    // user didn't provided more info
+                    exit(1);
                 }
             }
             if (argv[i][1] == 'o') {
@@ -131,6 +131,9 @@ main
             }
         }
     }
+
+    // Must check if I was provided with all the info I need.
+    // if not, exit(1)
 
     printf("Parsed options:\n");
     printf("Level: %d\n", objective_options_get_level(options));
