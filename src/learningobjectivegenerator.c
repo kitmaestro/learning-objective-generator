@@ -9,6 +9,12 @@
 
 #include "generators/spanish-generator.h"
 #include "generators/art-generator.h"
+#include "generators/french-generator.h"
+#include "generators/history-generator.h"
+#include "generators/math-generator.h"
+#include "generators/physical-education-generator.h"
+#include "generators/religion-generator.h"
+#include "generators/science-generator.h"
 
 char *output_file_name;
 
@@ -149,7 +155,7 @@ main
         }
         case 'e':
         {
-            objective = generate_spanish_objective(objective_options_get_level(options),
+            objective = generate_english_objective(objective_options_get_level(options),
                                                    objective_options_get_grade(options),
                                                    objective_options_get_domain_level(options),
                                                    objective_options_get_topic(options));
@@ -157,7 +163,7 @@ main
         }
         case 'f':
         {
-            objective = generate_spanish_objective(objective_options_get_level(options),
+            objective = generate_french_objective(objective_options_get_level(options),
                                                    objective_options_get_grade(options),
                                                    objective_options_get_domain_level(options),
                                                    objective_options_get_topic(options));
@@ -165,7 +171,7 @@ main
         }
         case 'm':
         {
-            objective = generate_spanish_objective(objective_options_get_level(options),
+            objective = generate_math_objective(objective_options_get_level(options),
                                                    objective_options_get_grade(options),
                                                    objective_options_get_domain_level(options),
                                                    objective_options_get_topic(options));
@@ -173,7 +179,7 @@ main
         }
         case 'h':
         {
-            objective = generate_spanish_objective(objective_options_get_level(options),
+            objective = generate_history_objective(objective_options_get_level(options),
                                                    objective_options_get_grade(options),
                                                    objective_options_get_domain_level(options),
                                                    objective_options_get_topic(options));
@@ -181,7 +187,7 @@ main
         }
         case 'c':
         {
-            objective = generate_spanish_objective(objective_options_get_level(options),
+            objective = generate_science_objective(objective_options_get_level(options),
                                                    objective_options_get_grade(options),
                                                    objective_options_get_domain_level(options),
                                                    objective_options_get_topic(options));
@@ -197,7 +203,7 @@ main
         }
         case 'p':
         {
-            objective = generate_spanish_objective(objective_options_get_level(options),
+            objective = generate_physical_education_objective(objective_options_get_level(options),
                                                    objective_options_get_grade(options),
                                                    objective_options_get_domain_level(options),
                                                    objective_options_get_topic(options));
@@ -205,7 +211,7 @@ main
         }
         case 'r':
         {
-            objective = generate_spanish_objective(objective_options_get_level(options),
+            objective = generate_religion_objective(objective_options_get_level(options),
                                                    objective_options_get_grade(options),
                                                    objective_options_get_domain_level(options),
                                                    objective_options_get_topic(options));

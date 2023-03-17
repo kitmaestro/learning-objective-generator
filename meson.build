@@ -9,6 +9,12 @@ files = [
   'src/generators/art-generator.c',
   'src/generators/english-generator.c',
   'src/generators/spanish-generator.c',
+  'src/generators/french-generator.c',
+  'src/generators/history-generator.c',
+  'src/generators/math-generator.c',
+  'src/generators/physical-education-generator.c',
+  'src/generators/religion-generator.c',
+  'src/generators/science-generator.c',
 ]
 
 exe = executable('learningobjectivegenerator', files,
