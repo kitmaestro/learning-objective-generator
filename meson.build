@@ -4,21 +4,26 @@ project('LearningObjectiveGenerator', 'c',
 
 files = [
   'src/learningobjectivegenerator.c',
-  'src/objective-options.c',
+  'src/lib/objective-options.c',
+  'src/lib/utils.c',
+  'src/generators/art-generator.c',
+  'src/generators/english-generator.c',
+  'src/generators/spanish-generator.c',
 ]
 
 exe = executable('learningobjectivegenerator', files,
   install : true)
 
 testArgs = [
-  '-level',
+  '-l',
   '1',
-  '-grade',
+  '-g',
   '1',
-  '-subject',
-  'art',
-  '-domain-level',
-  '0'
+  '-s',
+  'a',
+  '-d',
+  '1',
+  'Los numeros romanos'
 ]
 
 test('basic', exe, args: testArgs)

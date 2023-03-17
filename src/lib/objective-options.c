@@ -7,7 +7,13 @@ objective_options_new
 (void)
 {
     ObjectiveOptions * options = (ObjectiveOptions *) malloc(sizeof(ObjectiveOptions*));
-    options->topic = (char *) malloc(256);
+    options->topic = (char *)malloc(256);
+
+    options->level = 0;
+    options->grade = 0;
+    options->domain_level = 0;
+    options->subject = '?';
+
     return options;
 }
 
