@@ -4,9 +4,11 @@
   "description": "",
   "author": "Otoniel Reyes",
   "license": "GPL-3.0-or-later",
+  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node . -h"
+    "dev": "node .",
+    "start": "node ."
   },
   "repository": {
     "type": "git",
